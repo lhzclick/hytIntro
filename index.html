@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width user-scalable=no" />
+		<title>胡一堂学院</title>
+		<script>
+			document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth / 16 + 'px';
+		</script>
+		<style type="text/css">
+			@-webkit-keyframes rotate {
+				0% {
+					transform: rotateX(0deg)  rotateZ(0deg);
+				}
+				100% {
+					transform: rotateX(-360deg)  rotatez(360deg);
+				}
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				font-family:  "微软雅黑";
+			}
+			
+			li {
+				list-style: none;
+			}
+			#xc{
+				background:url(img/bg.jpg) 0 0;
+				background-size:100% 100% ;
+				padding-bottom: 3rem;
+			}
+			/*主标题*/
+			.mianTitle{
+				height: 2.6rem;
+				line-height: 2.6rem;
+				font-size: 1rem;
+				padding-left: 4rem;
+				background:url(img/logo2.png)  no-repeat .5rem 0;
+				background-size:contain;
+				color: #fff;
+			}
+			.nameText{
+				text-shadow:#f00 3px 3px 3px;
+			}
+			/*主标题下面图片*/
+			.logo-img{
+				position: relative;
+				height:8.3rem;
+			}
+			.logo-img img{
+				width: 80%;
+			}
+			.duang{	
+				height: 5.8rem;
+				margin-top:0.85rem;
+				margin-left: 10%;
+			}
+			.women{
+				height:2rem;
+				position: absolute;
+				left: 10%;
+				top:6.2rem ;
+			}
+			/*介绍li*/
+			.referral>li{
+				margin:0 5%;
+				margin-top: 1.2rem;
+			}
+			.title{
+				font-size:1rem;
+				font-weight: bold;
+				-webkit-text-stroke: #fff .04rem;
+			}
+			.text{
+				font-size: 0.55rem;
+				color: #fff;
+				line-height: 1rem;
+				padding-top: .6rem;
+				padding-left: .4rem;
+				font-size: .7rem;
+			}
+			.stand{
+				font-size: 0.6rem;
+				font-family: arial;
+				text-shadow: #f00 3px 3px 3px;
+			}
+			.text>img{
+				width: 85%;
+				height: 4.5rem;
+				margin-top: 0.5rem;
+			}
+			
+			/*联系方式*/
+			.tel{
+				position: relative;
+			}
+			.tel li{
+				line-height: 1.4rem;
+			}
+			.tel span{
+				font-weight: bold;
+			}
+			.code{
+				width: 4rem;
+				height: 4rem;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.distance{
+				height: 5rem;
+			}
+			
+			/*课程安排表格*/
+			.tbMoney{
+				color: #fff;
+				font-size: .6rem;
+				border-collapse: collapse;
+				margin-top: 1.2rem;
+			}
+			.tbMoney td,.tbMoney th{
+				border:1px solid #fff;
+				text-align: center;
+			}
+			
+			/*右上角立方体*/
+			.cube{
+				width: 2.6rem;
+				height: 2.6rem;
+				position:fixed;
+				right:.5rem ;
+				top: .5rem;
+				animation: 6s rotate infinite linear;
+				transform-style: preserve-3d;
+				transform-origin: center center -1.3rem;
+				color: #fff;
+				z-index: 100;
+			}
+			.cube span {
+				width: 2.6rem;
+				height: 2.6rem;
+				position: absolute;
+				line-height: 2.6rem;
+				text-align: center;
+				backface-visibility: hidden;
+			}
+			.cube span:nth-of-type(1) {
+				background: #F0F;
+				left: 0;
+				top: 0;
+			}
+			.cube span:nth-of-type(2) {
+				background: #0FC;
+				left: 0;
+				top: 2.6rem;
+				transform: rotateX(-90deg);
+				transform-origin: top;
+			}
+			
+			.cube span:nth-of-type(3) {
+				background: #F00;
+				left: 0;
+				top: 0;
+				transform: translateZ(-2.6rem) rotatex(180deg) rotateZ(180deg);
+			}
+			
+			.cube span:nth-of-type(4) {
+				background: #CF0;
+				left: 0px;
+				top: -2.6rem;
+				transform: rotateX(90deg);
+				transform-origin: bottom;
+			}
+			
+			.cube span:nth-of-type(5) {
+				background: #C6F;
+				left: -2.6rem;
+				top: 0;
+				transform: rotateY(-90deg);
+				transform-origin: right;
+			}
+			
+			.cube span:nth-of-type(6) {
+				background: #633;
+				left: 2.6rem;
+				top: 0;
+				transform: rotateY(90deg);
+				transform-origin: left;
+			}
+			
+			/*更多问题链接*/
+			.more{
+				margin-top: 2rem;
+				color: #fff;
+				padding-left: 1.2rem;
+				font-size: .9rem;
+			}
+			.more a {
+				margin-left: 1.4rem;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="xc">
+			<div class="cube">
+				<span>胡</span>
+				<span>一</span>
+				<span>堂</span>
+				<span>学</span>
+				<span>院</span>
+				<span>^-^</span>
+			</div>
+			<section class="mianTitle"><span class="nameText">胡一堂学院</span></section>
+			
+			<div class="logo-img">
+				<img src="img/duang.png" alt="" class="duang"/>
+				<img src="img/text.png" alt="" class="women" />
+			</div>
+			<ul class="referral">
+				<li>
+					<h3 class="title">前端工程师简介:</h3>
+					<p class="text">前端工程师作为互联网行业的分支，是近年来发展起来的一门新型职业，主要利用html、css、javascript、ajax、DOM等技术对pc端和移动端的网页进行开发。目前互联网公司、传媒公司、医疗行业、教育行业、国企、外企等几乎各个行业对这一职业的需求都比较大。简单来说，只要有公司，公司需要自己的网站，我们前端工程师就是公司必不可少的一部分，是公司网站门户的装饰家。前端工程师的需求量以及薪资情况大家可以在专业的拉钩、boss直聘和智联招聘等手机app上搜索“web前端”查看。</p>
+				</li>
+				<li>
+					<h3 class="title">我们的优势:</h3>
+					<p class="text"><span class="stand">零基础</span>，不用怕，我们专业就行；就业好，有保障，底薪肯定高！<br/>
+   我们是专一的团队，我们只做前端<br/>
+   我们是热情的团队，我们年轻有干劲<br/>
+   我们的课程充满趣味，迎合年轻口味<br/>
+   大学四年，毕业找工作难，你可能觉得读了“假”大学，来胡一堂学习“真”技术，添加属于自己的技能，在互联网的峡谷驰骋！</p>
+				</li>
+				<li>
+					<h3 class="title">我们的承诺:</h3>
+					<p class="text">学完课程之后，<br/>
+首先，可以把自己打造成为一名绝对专业级的“前端开发工程师”——这也意味着，任何移动端的网页、PC端的网页，以及任何设备上的网页开发，对你来说都不是问题；<br/>
+其次，能拿着自己的作品，在武汉，轻松找个<span class="stand">6K-10K</span>的前端开发工程师的职位。在北上广深这些地方，工资起步能达到<span class="stand">8-12k</span>。</p>
+				</li>
+				<li>
+					<h3 class="title">我们的课程安排:</h3>
+					<!--<p class="text">-->
+						<!--<img class="money" src="img/money.png" alt="" />-->
+					<!--</p>-->
+					<table class="tbMoney">
+						<tr>
+							<th>课程名称</th>
+							<th>课程主要内容</th>
+							<th>课时</th>
+							<th>开课时间</th>
+							<th>收费标准</th>
+						</tr>
+						<tr>
+							<td>Web前端零基础课程</td>
+							<td>html+css</td>
+							<td>一个半月</td>
+							<td>三月中旬</td>
+							<td>3600</td>
+						</tr>
+						<tr>
+							<td>Web前端进阶课程</td>
+							<td>Javascript</td>
+							<td>两个半月</td>
+							<td>五月初</td>
+							<td>6400</td>
+						</tr>
+					</table>
+				</li>
+				<li class="distance">
+					<h3 class="title">联系方式:</h3>
+					<ul class="text tel">
+						<li><span>电话:</span> 18811027460</li>
+						<li><span>微信号:</span> lhz37241</li>
+						<li><span>QQ:</span> 392539910</li>
+						<li><img src="img/code.jpg" alt="" class="code"/></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="more">
+				<span>Touch ME!</span>
+				<a href="https://lhzclick.github.io/hytXc/">更多咨询问题解答</a>
+			</div>
+		</div>
+	</body>
+</html>
