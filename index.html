@@ -10,10 +10,10 @@
 		<style type="text/css">
 			@-webkit-keyframes rotate {
 				0% {
-					transform: rotateX(0deg)  rotateZ(0deg);
+					-webkit-transform: rotateX(0deg)  rotateZ(0deg);
 				}
 				100% {
-					transform: rotateX(-360deg)  rotatez(360deg);
+					-webkit-transform: rotateX(-360deg)  rotatez(360deg);
 				}
 			}
 			* {
@@ -132,8 +132,8 @@
 				right:.5rem ;
 				top: .5rem;
 				animation: 6s rotate infinite linear;
-				transform-style: preserve-3d;
-				transform-origin: center center -1.3rem;
+				-webkit-transform-style: preserve-3d;
+				-webkit-transform-origin: center center -1.3rem;
 				color: #fff;
 				z-index: 100;
 			}
@@ -154,39 +154,39 @@
 				background: #0FC;
 				left: 0;
 				top: 2.6rem;
-				transform: rotateX(-90deg);
-				transform-origin: top;
+				-webkit-transform: rotateX(-90deg);
+				-webkit-transform-origin: top;
 			}
 			
 			.cube span:nth-of-type(3) {
 				background: #F00;
 				left: 0;
 				top: 0;
-				transform: translateZ(-2.6rem) rotatex(180deg) rotateZ(180deg);
+				-webkit-transform: translateZ(-2.6rem) rotatex(180deg) rotateZ(180deg);
 			}
 			
 			.cube span:nth-of-type(4) {
 				background: #CF0;
 				left: 0px;
 				top: -2.6rem;
-				transform: rotateX(90deg);
-				transform-origin: bottom;
+				-webkit-transform: rotateX(90deg);
+				-webkit-transform-origin: bottom;
 			}
 			
 			.cube span:nth-of-type(5) {
 				background: #C6F;
 				left: -2.6rem;
 				top: 0;
-				transform: rotateY(-90deg);
-				transform-origin: right;
+				-webkit-transform: rotateY(-90deg);
+				-webkit-transform-origin: right;
 			}
 			
 			.cube span:nth-of-type(6) {
 				background: #633;
 				left: 2.6rem;
 				top: 0;
-				transform: rotateY(90deg);
-				transform-origin: left;
+				-webkit-transform: rotateY(90deg);
+				-webkit-transform-origin: left;
 			}
 			
 			/*更多问题链接*/
